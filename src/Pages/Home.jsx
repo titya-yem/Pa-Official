@@ -29,7 +29,7 @@ const Home = () => {
 
       {/* Right Section */}
       <motion.div
-        className="relative bottom-48 md:bottom-40 lg:bottom-20 xl:left-8 md:w-[80%] lg:w-[45%] h-[700px]"
+        className="relative bottom-48 md:bottom-40 lg:bottom-[90px] xl:left-8 md:w-[80%] lg:w-[45%] h-[700px]"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
