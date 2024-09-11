@@ -23,7 +23,7 @@ const About = () => {
           variants={itemVariants}
         ></motion.div>
         <motion.div
-          className="absolute inset-0 flex justify-center mt-6 md:mt-2 2xl:mt-6"
+          className="absolute inset-0 flex justify-center mt-2 lg:mt-6"
           variants={itemVariants}
         >
           <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-[600] italic text-[#FFD500]">
@@ -31,17 +31,17 @@ const About = () => {
           </h1>
         </motion.div>
         <motion.img
-          className="max-h-[1440px] w-full mx-auto rounded-b-lg z-[-1]"
+          className="w-full mx-auto rounded-b-lg z-[-1]"
           src={BgImage}
           alt="Pa perfume set"
           variants={itemVariants}
         />
         <motion.div
-          className="absolute inset-0 flex mt-6 2xl:mt-auto justify-center lg:*:w-3/4 xl:*:w-3/4 2xl:*:w-3/5 text-black z-[1] p-6"
+          className="absolute inset-0 flex md:mt-10 justify-center lg:*:w-3/4 xl:*:w-3/4 2xl:*:w-3/5 text-black z-[1] p-6"
           variants={itemVariants}
         >
-          <div className="text-lg md:text-xl 2xl:text-2xl text-center mt-4 2xl:mt-20">
-            <h1 className="text-2xl lg:text-4xl 2xl:text-5xl font-[600] md:mb-2 lg:mb-6 2xl:mt-4">
+          <div className="text-sm lg:text-[16px] text-center mt-4">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-[600] md:mb-2 lg:mb-6 2xl:mt-4">
               Experience the essence of memories with our brand new perfume,
               “ប៉ា”
             </h1>

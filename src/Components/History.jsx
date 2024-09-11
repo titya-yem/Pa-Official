@@ -9,7 +9,7 @@ const History = () => {
   });
 
   return (
-    <div id="History" className="max-w-[2000px] p-6 my-28 mx-auto">
+    <div id="History" className="max-w-[1440px] p-6 my-20 mx-auto">
       <motion.h1
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -34,7 +34,7 @@ const History = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-lg md:text-xl 2xl:text-2xl w-full xl:w-1/3 *:leading-9 *:mt-6 md:*:mt-8 text-center *:mx-auto lg:text-left text-[#FAF5FF]"
+          className="text-sm lg:text-[16px] w-full md:*w-2/4 xl:w-1/3 *:leading-6 *:mt-6 md:*:mt-8 text-center *:mx-auto lg:text-left text-[#FAF5FF]"
         >
           <p>
             Introducing "ប៉ា" a fragrance that captures the deep bond between

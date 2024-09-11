@@ -8,15 +8,15 @@ const Navbar = () => {
   const [isNav, setIsNav] = useState(false);
 
   return (
-    <div className="max-w-[2000px] p-6 mx-auto flex justify-between items-center">
-      <div className="w-[100px] md:w-[120px] rounded-[30px] overflow-hidden">
-        <img src={logo} alt="Pa Log" />
+    <div className="max-w-[1440px] p-8 mx-auto flex justify-between items-center">
+      <div className="w-20 md:w-24 rounded-[30px] overflow-hidden">
+        <img src={logo} alt="Pa Logo" />
       </div>
       <button onClick={() => setIsNav(!isNav)}>
         {isNav ? (
-          <IoIosCloseCircle size={30} className="fill-white" />
+          <IoIosCloseCircle size={25} className="fill-white md:hidden" />
         ) : (
-          <GiHamburgerMenu size={30} className="fill-white md:hidden" />
+          <GiHamburgerMenu size={25} className="fill-white md:hidden" />
         )}
       </button>
 
@@ -24,7 +24,7 @@ const Navbar = () => {
       <ul
         className={`${
           isNav ? "top-36 opacity-100" : "top-[-100%] opacity-0"
-        } absolute right-0 flex flex-col gap-y-10 h-screen w-[45%] text-center text-[26px] bg-[#0A0A0A] text-[#FED42D] z-10 transition-all duration-500 ease-in-out md:hidden `}
+        } absolute right-0 flex flex-col gap-y-10 h-screen w-[45%] text-center text-lg bg-black text-[#FED42D] z-10 transition-all duration-500 ease-in-out md:hidden `}
       >
         <li onClick={() => setIsNav(false)}>
           <Link to="/">Home</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </ul>
 
       {/* Desktop navbar */}
-      <ul className="hidden md:flex justify-between items-center gap-x-11 text-[26px] text-[#FED42D]">
+      <ul className="hidden md:flex justify-between items-center gap-x-11 text-lg text-[#FED42D]">
         <li onClick={() => setIsNav(false)}>
           <Link to="/">Home</Link>
         </li>

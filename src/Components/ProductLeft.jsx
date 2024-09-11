@@ -8,20 +8,20 @@ const ProductLeft = () => {
       <div className="grid place-items-center gap-6 rounded-lg px-6 pb-6 bg-[#BCBCBC]">
         <div className="flex flex-col md:flex-row items-center gap-6 mt-6">
           <img
-            className="md:h-80"
+            className="md:h-[250px] w-56"
             src={PerfumeBottle}
             alt="Pa Perfume Bottle"
           />
-          <img className="w-72" src={BackOfBox} alt="Pa Back of the perfume" />
+          <img className="w-56" src={BackOfBox} alt="Pa Back of the perfume" />
         </div>
         <div>
           <img
-            className="w-[620px] rounded-lg"
+            className="md:w-[620px] rounded-lg"
             src={SideOfBox}
             alt="Pa right side of perfume"
           />
         </div>
-        <div className="grid gap-4 text-lg md:text-xl 2xl:text-2xl md:6 w-[620px] rounded-md *:mx-4 bg-[#F5F5F5]">
+        <div className="grid gap-4 text-sm lg:text-[16px] md:6 md:w-[620px] rounded-md *:mx-4 bg-[#F5F5F5]">
           <p>“ប៉ា” fragrance:</p>
           <p>
             We spend about 4 months to completed the project and check for the
