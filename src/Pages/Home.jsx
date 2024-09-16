@@ -11,10 +11,10 @@ const Home = () => {
         transition={{ duration: 1.2 }}
       >
         <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold italic">
-          <h1>Experience the Essence of Memories with "ប៉ា" Perfume</h1>
+          <h1>Experience the Essence of Memories with "ប៉ា" Perfume.</h1>
         </div>
         <p className="text-sm lg:text-[16px] text-[#DFDFDF] mt-4 mb-8 2xl:mb-14">
-          Introducing “ប៉ា” Perfume, a fragrance that captures the essence of
+          Introducing "ប៉ា" Perfume, a fragrance that captures the essence of
           memories. With every spritz, be transported to cherished moments and
           feel the presence of your loved ones. Embrace the power of scent and
           create lasting memories with “ប៉ា” Perfume.
@@ -29,13 +29,14 @@ const Home = () => {
 
       {/* Right Section */}
       <motion.div
-        className="relative bottom-48 md:bottom-40 lg:bottom-[90px] xl:left-8 md:w-[80%] lg:w-[45%] h-[700px]"
+        className="relative top-5 xl:left-8 lg:w-[45%] h-[550px]"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <div className="scale-[65%] lg:scale-[80%] h-full mt-28 md:mt-auto xl:ml-16 2xl:w-full mx-auto">
+        <div className="">
           <spline-viewer
+            class="spline"
             loading-anim-type="spinner-big-dark"
             url="https://prod.spline.design/11KaBfTCshKbZBOf/scene.splinecode"
           ></spline-viewer>

@@ -14,9 +14,9 @@ const Navbar = () => {
       </div>
       <button onClick={() => setIsNav(!isNav)}>
         {isNav ? (
-          <IoIosCloseCircle size={25} className="fill-white md:hidden" />
+          <IoIosCloseCircle size={30} className="fill-white md:hidden" />
         ) : (
-          <GiHamburgerMenu size={25} className="fill-white md:hidden" />
+          <GiHamburgerMenu size={30} className="fill-white md:hidden" />
         )}
       </button>
 
