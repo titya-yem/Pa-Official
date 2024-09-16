@@ -11,19 +11,19 @@ const Contact = () => {
       <motion.div
         ref={ref}
         className="flex flex-col lg:flex-row lg:justify-between items-center p-6 text-[#FAF5FF]"
-        initial={{ opacity: 0, scale: 0.8 }} // Pop-up effect
-        animate={isInView ? { opacity: 1, scale: 1 } : {}} // Scale to full size
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={isInView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.div
           className="w-full lg:w-[768px] px-4 text-center"
-          initial={{ opacity: 0, scale: 0.8 }} // Scale effect for this section
+          initial={{ opacity: 0, scale: 0.8 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1
             className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold italic mt-12 mb-6 text-[#FFD500]"
-            initial={{ opacity: 0, scale: 0.8 }} // Pop-up effect for the heading
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           >
@@ -32,19 +32,19 @@ const Contact = () => {
           <div className="flex flex-col gap-6 text-sm lg:text-[16px] sm:w-[60%] lg:w-[70%] sm:mx-auto">
             <motion.input
               className="p-6 rounded-md text-black"
-              type="text"
-              name="Name"
-              placeholder="Name"
-              initial={{ opacity: 0, scale: 0.8 }} // Input pop-up effect
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            />
-            <motion.input
-              className="p-6 rounded-md text-black"
               type="email"
               name="Email"
               placeholder="Email"
-              initial={{ opacity: 0, scale: 0.8 }} // Input pop-up effect
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            />
+            <motion.textarea
+              className="p-6 h-32 rounded-md text-black"
+              type="message"
+              name="Message"
+              placeholder="Message"
+              initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
             />

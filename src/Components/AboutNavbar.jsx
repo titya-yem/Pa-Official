@@ -12,19 +12,19 @@ const Navbar = () => {
       <div className="w-20 md:w-24 rounded-[30px] overflow-hidden">
         <img src={logo} alt="Pa Logo" />
       </div>
-      <button onClick={() => setIsNav(!isNav)}>
+      <div className="p-4" onClick={() => setIsNav(!isNav)}>
         {isNav ? (
-          <IoIosCloseCircle size={30} className="fill-white md:hidden" />
+          <IoIosCloseCircle size={25} className="fill-white md:hidden" />
         ) : (
-          <GiHamburgerMenu size={30} className="fill-white md:hidden" />
+          <GiHamburgerMenu size={25} className="fill-white md:hidden" />
         )}
-      </button>
+      </div>
 
       {/* Navbar with transition effect */}
       <ul
         className={`${
           isNav ? "top-36 opacity-100" : "top-[-100%] opacity-0"
-        } absolute right-0 flex flex-col gap-y-10 h-screen w-[45%] text-center text-lg bg-black text-[#FED42D] z-10 transition-all duration-500 ease-in-out md:hidden `}
+        } absolute right-0 flex flex-col gap-y-10 h-screen w-[45%] text-center text-xl bg-black text-[#FED42D] z-10 transition-all duration-500 ease-in-out md:hidden`}
       >
         <li onClick={() => setIsNav(false)}>
           <Link to="/">Home</Link>
