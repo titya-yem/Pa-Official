@@ -30,7 +30,7 @@ const Contact = () => {
             Contact
           </motion.h1>
           <form
-            action="https://formsubmit.co/paofficial168@gmail.com"
+            action="https://formsubmit.co/a6d09f975c2975ef1116d026d663084e"
             method="POST"
           >
             <div className="flex flex-col gap-6 text-sm lg:text-[16px] sm:w-[60%] lg:w-[70%] sm:mx-auto">

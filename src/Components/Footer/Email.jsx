@@ -13,7 +13,7 @@ const Email = () => {
           <div>
             <MdOutlineMailOutline size={20} className="fill-red-600" />
             <a className="underline" href="mailto:">
-              thitya.yem.photo@gmail.com
+              paofficial168@gmail.com
             </a>
           </div>
           <div>
