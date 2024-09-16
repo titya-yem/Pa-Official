@@ -12,11 +12,15 @@ const Navbar = () => {
       <div className="w-20 md:w-24 rounded-[30px] overflow-hidden">
         <img src={logo} alt="Pa Logo" />
       </div>
-      <div className="p-4" onClick={() => setIsNav(!isNav)}>
+      <div
+        onClick={() => setIsNav(!isNav)}
+        className="md:hidden p-6 cursor-pointer"
+        style={{ touchAction: "manipulation" }}
+      >
         {isNav ? (
-          <IoIosCloseCircle size={25} className="fill-white md:hidden" />
+          <IoIosCloseCircle size={25} className="fill-white" />
         ) : (
-          <GiHamburgerMenu size={25} className="fill-white md:hidden" />
+          <GiHamburgerMenu size={25} className="fill-white" />
         )}
       </div>
 
