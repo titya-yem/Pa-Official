@@ -12,13 +12,16 @@ const Navbar = () => {
       <div className="w-20 md:w-24 rounded-[30px] overflow-hidden">
         <img src={logo} alt="Pa Logo" />
       </div>
-      <div className="p-4" onClick={() => setIsNav(!isNav)}>
+      <button
+        className="md:hidden p-6 cursor-pointer"
+        onClick={() => setIsNav(!isNav)}
+      >
         {isNav ? (
           <IoIosCloseCircle size={25} className="fill-white md:hidden" />
         ) : (
           <GiHamburgerMenu size={25} className="fill-white md:hidden" />
         )}
-      </div>
+      </button>
 
       {/* Navbar with transition effect */}
       <ul

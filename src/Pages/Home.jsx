@@ -29,18 +29,16 @@ const Home = () => {
 
       {/* Right Section */}
       <motion.div
-        className="relative top-5 xl:left-8 lg:w-[45%] h-[550px]"
+        className="relative lg:w-[45%] h-[550px] mx-auto"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <div className="">
-          <spline-viewer
-            class="spline"
-            loading-anim-type="spinner-big-dark"
-            url="https://prod.spline.design/11KaBfTCshKbZBOf/scene.splinecode"
-          ></spline-viewer>
-        </div>
+        <spline-viewer
+          class="spline"
+          loading-anim-type="spinner-big-dark"
+          url="https://prod.spline.design/11KaBfTCshKbZBOf/scene.splinecode"
+        ></spline-viewer>
       </motion.div>
     </div>
   );

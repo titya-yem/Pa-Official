@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="w-20 md:w-24 rounded-[30px] overflow-hidden">
         <img src={logo} alt="Pa Logo" />
       </div>
-      <div
+      <button
         onClick={() => setIsNav(!isNav)}
         className="md:hidden p-6 cursor-pointer"
         style={{ touchAction: "manipulation" }}
@@ -22,7 +22,7 @@ const Navbar = () => {
         ) : (
           <GiHamburgerMenu size={25} className="fill-white" />
         )}
-      </div>
+      </button>
 
       {/* Navbar with transition effect */}
       <ul

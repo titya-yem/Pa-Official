@@ -18,6 +18,7 @@ html {
 @media screen and (min-width: 600px) {
   .spline {
     padding-right: 80px;
+    width: 135%;
   }
 }
 
@@ -26,6 +27,7 @@ html {
     bottom: 160px;
     right: 70px;
     scale: 75%;
+    width: 130%;
     padding-left: 60px;
   }
 }
@@ -33,7 +35,7 @@ html {
 @media screen and (min-width: 1024px) {
   .spline {
     bottom: 60px;
-    right: 100px;
+    right: 60px;
     scale: 85%;
   }
 }
@@ -41,7 +43,7 @@ html {
 @media screen and (min-width: 1439px) {
   .spline {
     bottom: 120px;
-    right: 180px;
+    right: 110px;
     padding-left: 200px;
   }
 }
